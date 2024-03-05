@@ -7,6 +7,8 @@ command = ["conda", "create", "--name", "main-ds", "python=3.9"]
 subprocess.run(command, check=True)
 
 conda activate main-ds
+python /mount/src/learn-data-analysis-with-python/streamlit_app.py
+
 
 import pandas as pd
 import matplotlib.pyplot as plt
