@@ -1,4 +1,4 @@
-pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
+pip install matplotlib
 
 import pandas as pd
 import matplotlib.pyplot as plt
