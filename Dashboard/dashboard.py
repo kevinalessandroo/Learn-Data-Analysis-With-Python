@@ -42,7 +42,6 @@ day['weather_cond'] = day['weather_cond'].map(weather_cond_mapping)
 min_date = pd.to_datetime(day['dateday']).dt.date.min()
 max_date = pd.to_datetime(day['dateday']).dt.date.max()
 
-with st.sidebar:
 start_date, end_date = st.date_input(
     label='Rentang Waktu',
     min_value=min_date,
