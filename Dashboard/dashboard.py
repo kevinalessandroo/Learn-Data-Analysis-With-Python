@@ -1,1 +1,1 @@
-> cd matplotlib > python setup.py install.
+sudo pip install -e git+git://github.com/matplotlib/matplotlib.git#egg=matplotlib
