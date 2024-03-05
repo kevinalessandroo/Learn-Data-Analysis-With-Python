@@ -1,2 +1,1 @@
-pip install matplotlib
-
+> cd matplotlib > python setup.py install.
