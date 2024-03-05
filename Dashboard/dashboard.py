@@ -1,1 +1,2 @@
-conda install matplotlib
+pip install matplotlib
+
