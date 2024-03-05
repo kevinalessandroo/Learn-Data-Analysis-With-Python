@@ -1,1 +1,2 @@
-conda activate main-ds
+conda create --name main-ds
+
