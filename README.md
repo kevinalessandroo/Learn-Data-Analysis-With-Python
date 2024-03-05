@@ -1,2 +1,5 @@
-# Learn-Data-Analysis-With-Python
-a dicoding test
+# Learn Data Analysis With Python: Bike Rental Dashboard
+
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
