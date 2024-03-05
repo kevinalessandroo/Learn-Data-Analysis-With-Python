@@ -43,13 +43,12 @@ min_date = pd.to_datetime(day['dateday']).dt.date.min()
 max_date = pd.to_datetime(day['dateday']).dt.date.max()
 
 with st.sidebar:
-    st.image('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEAAA//9k=')
-    start_date, end_date = st.date_input(
-        label='Rentang Waktu',
-        min_value=min_date,
-        max_value=max_date,
-        value=[min_date, max_date]
-    )
+start_date, end_date = st.date_input(
+    label='Rentang Waktu',
+    min_value=min_date,
+    max_value=max_date,
+    value=[min_date, max_date]
+)
 
 main_df = day[(day['dateday'] >= str(start_date)) & (day['dateday'] <= str(end_date))]
 
