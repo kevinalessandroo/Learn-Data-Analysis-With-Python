@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-# Set style seaborn
-sns.set(style='light')
-
 # Menyiapkan data day_df
 day_df = pd.read_csv("Dashboard/day.csv")
 day_df.head()
