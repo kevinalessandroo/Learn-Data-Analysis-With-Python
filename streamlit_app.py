@@ -1,4 +1,11 @@
-conda create --name main-ds python=3.9
+import subprocess
+
+# Specify the command as a list of strings
+command = ["conda", "create", "--name", "main-ds", "python=3.9"]
+
+# Use subprocess to run the command
+subprocess.run(command, check=True)
+
 conda activate main-ds
 
 import pandas as pd
