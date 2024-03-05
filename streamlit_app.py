@@ -1,9 +1,4 @@
-pip install matplotlib
+streamlit run first_app.py
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import streamlit as st
-
-# Set style seaborn
-sns.set(style='dark')
+# Import convention
+>>> import streamlit as st
