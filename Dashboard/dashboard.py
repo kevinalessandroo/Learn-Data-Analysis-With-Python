@@ -113,13 +113,13 @@ def create_weather_rent_df(df):
 min_date = pd.to_datetime(day_df['dateday']).dt.date.min()
 max_date = pd.to_datetime(day_df['dateday']).dt.date.max()
  
-    # Mengambil start_date & end_date dari date_input
-    start_date, end_date = st.date_input(
-        label='Rentang Waktu',
-        min_value= min_date,
-        max_value= max_date,
-        value=[min_date, max_date]
-    )
+# Mengambil start_date & end_date dari date_input
+start_date, end_date = st.date_input(
+    label='Rentang Waktu',
+    min_value= min_date,
+    max_value= max_date,
+    value=[min_date, max_date]
+)
 
 main_df = day_df[(day_df['dateday'] >= str(start_date)) & 
                 (day_df['dateday'] <= str(end_date))]
