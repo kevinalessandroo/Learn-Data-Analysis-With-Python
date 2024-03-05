@@ -6,8 +6,14 @@ command = ["conda", "create", "--name", "main-ds", "python=3.9"]
 # Use subprocess to run the command
 subprocess.run(command, check=True)
 
+#!/bin/bash
+
+# Activate Conda environment
 conda activate main-ds
+
+# Run the Python script
 python /mount/src/learn-data-analysis-with-python/streamlit_app.py
+
 
 
 import pandas as pd
