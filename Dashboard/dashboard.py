@@ -1,6 +1,3 @@
-Certainly! It looks like you want to refactor your Streamlit app code to make it different from the previous one but still maintain the same functionality. Here's a refactored version with some changes in structure and style:
-
-```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
