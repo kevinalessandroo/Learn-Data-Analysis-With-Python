@@ -5,14 +5,17 @@ import streamlit as st
 import pandas as pd
 import os
 
-# Get the directory of the script
-script_dir = os.path.dirname(os.path.abspath(__file__))
+# Ganti 'your_file_id' dengan ID file CSV di Google Drive
+file_id = '1u3VXbqFsN40TgQn943VJX_PB75xzmz52'
 
-# Construct the relative path to the CSV file
-csv_file_path = os.path.join(script_dir, "Dashboard", "day.csv")
+# Buat tautan langsung ke file CSV
+link = f'https://drive.google.com/uc?id={file_id}'
 
-# Load data using the relative path
-day = pd.read_csv(csv_file_path)
+# Baca data CSV menggunakan pandas
+day = pd.read_csv(link)
+
+# Tampilkan data
+print(day)
 
 # Clean and transform data
 day.drop(columns=['windspeed'], inplace=True)
