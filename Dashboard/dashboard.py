@@ -2,9 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import pandas as pd
+import os
 
-# Load data
-day = pd.read_csv("Dashboard/day.csv")
+# Get the directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the relative path to the CSV file
+csv_file_path = os.path.join(script_dir, "Dashboard", "day.csv")
+
+# Load data using the relative path
+day = pd.read_csv(csv_file_path)
 
 # Clean and transform data
 day.drop(columns=['windspeed'], inplace=True)
